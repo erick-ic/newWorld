@@ -23,11 +23,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  /* 这里用vw单位，让字体随屏幕宽度缩放 */
-  font-size: 12vw;
-
   /* 保证最大和最小字体大小 */
-  font-size: clamp(16px, 12vw, 72px);
+  font-size: clamp(12px, 8vw, 48px);
 }
 
 .main > span {
@@ -56,6 +53,6 @@ body {
 /* 针对小屏手机微调字体大小 */
 @media (max-width: 400px) {
   .main {
-    font-size: 20vw; /* 小屏更大一点字体 */
+    font-size: 12vw; /* 小屏更大一点字体 */
   }
 }
